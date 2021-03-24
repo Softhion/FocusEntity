@@ -7,6 +7,7 @@
 //
 
 #if canImport(ARKit)
+#if !targetEnvironment(simulator)
 import RealityKit
 import ARKit
 
@@ -86,4 +87,5 @@ public struct FocusEntityComponent: Component {
     }
   }
 }
+#endif
 #endif
