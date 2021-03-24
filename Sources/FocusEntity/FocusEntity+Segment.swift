@@ -7,6 +7,7 @@
 //
 
 #if canImport(ARKit)
+#if !targetEnvironment(simulator)
 import RealityKit
 
 internal extension FocusEntity {
@@ -154,4 +155,5 @@ internal extension FocusEntity {
 
   }
 }
+#endif
 #endif
