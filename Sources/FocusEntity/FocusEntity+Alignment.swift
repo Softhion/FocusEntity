@@ -7,6 +7,7 @@
 //
 
 #if canImport(ARKit)
+#if !targetEnvironment(simulator)
 import RealityKit
 import ARKit
 import Combine
@@ -171,4 +172,5 @@ extension FocusEntity {
     }
   }
 }
+#endif
 #endif
