@@ -7,6 +7,7 @@
 //
 
 #if canImport(ARKit)
+#if !targetEnvironment(simulator)
 import RealityKit
 import ARKit
 import Combine
@@ -335,4 +336,5 @@ open class FocusEntity {
     return nil
   }
 }
+#endif
 #endif
