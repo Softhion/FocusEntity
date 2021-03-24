@@ -7,6 +7,7 @@
 //
 
 #if canImport(ARKit)
+#if !targetEnvironment(simulator)
 import RealityKit
 
 /// An extension of FocusEntity holding the methods for the "colored" style.
@@ -33,4 +34,5 @@ public extension FocusEntity {
     self.fillPlane?.model?.materials[0] = modelMaterial
   }
 }
+#endif
 #endif
